@@ -296,9 +296,10 @@ li {
   column-gap: var(--indent-col, 24px);
 }
 .card-item {
-  background-color: var(--white-color);
-  border: 1px solid var(--CORNFLOWER, #E7E9FC);
+  background-color: var(--white-color);  
 }
 .card-description {
   padding: 32px 16px;
+  border: 1px solid var(--cornflower-color, #E7E9FC);
+  border-top: none;
 }
