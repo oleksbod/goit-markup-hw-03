@@ -34,6 +34,7 @@ ul {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 button {
@@ -138,16 +139,18 @@ body {
   text-transform: uppercase;
   margin-right: 76px;
 }
-header {
-  padding: 24px 0;
+header {  
   border-bottom: 1px solid var(--cornflower-color, #E7E9FC);
 }
 header ul {
   gap: 40px;
 }
-.nav-link:active, 
-.nav-link:focus, 
-.nav-link:hover {
+.nav-link {
+  padding: 24px 0;
+}
+.nav-link:not(.logo):active, 
+.nav-link:not(.logo):focus, 
+.nav-link:not(.logo):hover {
   color: var(--ocean-color);
 }
 .address {  
@@ -158,12 +161,15 @@ h1, h2, h3 {
   color: var(--navy-blue-color);  
 }
 
-.section{
-  margin-bottom: 120px;
+.main-section {
+  padding: 188px 0;
 }
-
-.main-container {
-  padding: 188px 0px;
+.advantages-section,
+.team-section {
+  padding: 120px 0;
+}
+.doing-section {
+  padding-bottom: 120px;
 }
 
 h1 {
@@ -228,8 +234,9 @@ li {
 }
 
 .container { 
-  width: 1128px; 
-  margin: 0px auto;
+  width: 1158px; 
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .order-button {
@@ -240,20 +247,14 @@ li {
   border: none;
 }
 
-.team-section {
-  margin-bottom: 0px;
-  padding: 120px 0px;
-}
-
 /*Cards*/
 .team-card {
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
-.team-card > img,
-.team-card > p {
-  margin-bottom: 32px;
+.team-card-description {
+  padding: 32px 0;
 }
 .advantages, 
 .team {
@@ -270,17 +271,18 @@ li {
   column-gap: var(--indent-col, 24px);
   --items: 3;
 }
-.footer-container {
-  padding: 100px 0px;
+.footer {
+  padding: 100px 0;
 }
-.footer-container > a {
+.footer > .container > a {
   margin-bottom: 16px;
 }
-.footer-container > p {
+.footer > .container > p {
   width: 264px;
 }
-.portfolio {
-  margin-top: 96px;
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .filters {
   margin-bottom: 72px;
